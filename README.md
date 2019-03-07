@@ -13,6 +13,7 @@ Scid_vs_pc in a docker container. Currently under construction, will be up very 
 ### Linux
 * Main program
 * Audio
+* Engines installed on host system and are separately mounted
 
 ### MacOS
 * Not tested yet
@@ -28,12 +29,12 @@ Edit the command below according to your needs and execute it. Engines can be mo
 docker run --rm -it -e DISPLAY=$DISPLAY \
         --name scidvspc-${PV} \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
-        -v /home/ashwin:/home/scidvspc \
+        -v /PATH/TO/.scidvspc:/home/scidvspc/ \
         -v /usr/local/share/scid_vs_pc:/usr/local/share/scid_vs_pc \
         -v /dev/shm:/dev/shm \
         -v /etc/machine-id:/etc/machine-id \
         -v /run/user/$UID/pulse/native:/tmp/pulse \
-        -v /usr/bin/stockfish:/home/ashwin/.scidvspc \
+        -v /PATH/TO/stockfish:/home/scidvspc/.scidvspc \
         scidvspc-test:latest
 ```
 # Suggestions/Improvements
