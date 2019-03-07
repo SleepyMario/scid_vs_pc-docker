@@ -31,7 +31,7 @@ docker run --rm -it -e DISPLAY=$DISPLAY \
         -v /dev/shm:/dev/shm \
         -v /etc/machine-id:/etc/machine-id \
         -v /run/user/$UID/pulse/native:/tmp/pulse \
-        scidvspc:19
+        scidvspc:latest
 ```
 # Suggestions/Improvements
 * Please let me know if you run into any problems or have suggestions on how to improve this build.
