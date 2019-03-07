@@ -9,11 +9,12 @@ Scid_vs_pc in a docker container. Currently under construction, will be up very 
 
 # Functionality
 * Currently under construction. Goal is to have everything 100% working in Linux and MacOS (and maybe Windows).
-### Working:
-Linux:
-* 
+## Working:
+### Linux
+* Main program
+* Audio
 
-MacOS:
+### MacOS
 * Not tested yet
  
 ### Not Working:
