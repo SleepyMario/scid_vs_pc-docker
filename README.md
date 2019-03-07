@@ -25,7 +25,7 @@
 * Edit the command below according to your needs and execute it.
 ```sh
 docker run --rm -it -e DISPLAY=$DISPLAY \
-        --name scidvspc-19 \
+        --name scidvspc-4.19 \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
         -v /PATH/TO/.scidvspc:/home/scidvspc/ \
         -v /dev/shm:/dev/shm \
