@@ -8,7 +8,7 @@ ARG PV=4.19
 # install dependencies
 RUN apt-get update && \
 	apt-get upgrade -y && \
-	DEBIAN_FRONTEND=noninteractive apt-get install -y make g++ wget tcl tcl-dev tk tk-dev tcl-snack sudo pulseaudio alsa 
+	DEBIAN_FRONTEND=noninteractive apt-get install -y make g++ wget tcl tcl-dev tdom tk tk-dev tcl-snack sudo pulseaudio alsa 
 
 # tmpdir
 RUN mkdir -p /root/tmp
