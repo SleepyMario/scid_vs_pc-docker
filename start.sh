@@ -8,4 +8,4 @@ docker run --rm -it -e DISPLAY=$DISPLAY \
 	-v /etc/machine-id:/etc/machine-id \
 	-v /run/user/$UID/pulse/native:/tmp/pulse \
 	-v /usr/bin/stockfish:/home/ashwin/.scidvspc \
-	scidvspc-test:latest
+	scidvspc:19
