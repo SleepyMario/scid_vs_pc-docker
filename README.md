@@ -1,27 +1,19 @@
 # What is this?
-* Docker container with [Scid_vs_pc](http://scidvspc.sourceforge.net/)
-* Ubuntu 18.04 as the base image
+* [Scid_vs_pc](http://scidvspc.sourceforge.net/) in a docker container
+* Base image: Ubuntu 18.04
 
 # Functionality
-* Goal is to have everything 100% working in Linux, MacOS and Windows as an easy alternative that is on-par with native installations. 
+* Goal is to have everything 100% working with no noticeable difference from a native installations. 
 
 ## Working:
-### Linux
 * Everything but the things on the To-Do list. 
 
 ## To-Do:
-### Linux
 * Xfcc support (implemented and should be working, but untested)
-* Wayland support (should be working, but untested)
-
-### MacOS
-* Untested
-
-### Windows
-* Untested
+* Test on MacOS
 
 # How to Run 
-* Please make sure your engines/pieces/tablebases/etc are in the .scidvspc directory that is going to be mounted inside the container. This is the easiest way of getting everything to work. An alternative is to simply map your files separately inside the container.
+* Please make sure your engines/pieces/tablebases/etc are in the .scidvspc directory that is going to be mounted inside the container. This is the easiest way of getting everything to work. An alternative is to simply map your files separately inside the container (tablebases come to mind).
 * Edit the command below according to your needs and execute it.
 ```sh
 docker run --rm -it -e DISPLAY=$DISPLAY \
