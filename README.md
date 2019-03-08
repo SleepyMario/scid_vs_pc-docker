@@ -25,13 +25,13 @@
 * Edit the command below according to your needs and execute it.
 ```sh
 docker run --rm -it -e DISPLAY=$DISPLAY \
-        --name scidvspc-4.19 \
+        --name scidvspc-$BRANCH \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
         -v /PATH/TO/.scidvspc:/home/scidvspc/ \
         -v /dev/shm:/dev/shm \
         -v /etc/machine-id:/etc/machine-id \
         -v /run/user/$UID/pulse/native:/tmp/pulse \
-        scidvspc:4.19
+        scidvspc:$BRANCH
 ```
 # Suggestions/Improvements
 * Please let me know if you run into any problems or have suggestions on how to improve this build.
